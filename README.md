@@ -40,7 +40,7 @@ Although CNN is not widely used in NLP tasks, our CNN with dropout model has bee
 
 
 
-## Name Entity Recognition model**
+## Name Entity Recognition model
 
 The baseline approach was to construct a simple classifier by inheriting scikit-learn base classes **BaseEstimator** and **TransformerMixin**, to implement such functions like `get_params`, `get_params` and `fit_transform`. The result was overall acceptable, but this is just a
 
