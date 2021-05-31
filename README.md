@@ -36,7 +36,7 @@ In this project, to handle the imbalance of text classification dataset, I appli
 |  |`CNN`  | `CNN with dropout` |`0.870`|
 |  |CNN  | Deep CNN |0.840|
 
-Although CNN is not widely used in NLP tasks, our CNN with dropout model has been considered as the best one with F1 score of 0.87. The result suggests a great promise of adapting a CNN model in NLP field as well as balancing dataset using back-translation.
+Although CNN is not widely used in NLP tasks, our `CNN with dropout` model has been considered as the best one with _F1 score of 0.87_. The result suggests a great promise of adapting a **CNN model in NLP** field as well as balancing dataset using **back-translation**.
 
 
 
