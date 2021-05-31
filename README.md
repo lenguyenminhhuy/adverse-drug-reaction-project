@@ -55,7 +55,7 @@ Further model performance improvement was accomplished by employing **Conditiona
    ● `Bi-LSTM + one more LSTM layer with dropout`: to help the model capturing more information, we added up 1 more LSTM layer.
      
  **Experiment Result**:
- | Approach        | Type of Network           | Model            | F1 score|
+ | Approach        | Type of Network           | Model            | Macro F1 score|
 | ----------------|:-------------------------:| :---------------|---------|
 | ML Approach     |                           | BaseEstimator + TransformerMixin classes   |   0.59 |
 |                 | | Random Forest | 0.25|
