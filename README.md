@@ -44,7 +44,7 @@ Although CNN is not widely used in NLP tasks, our CNN with dropout model has bee
 
 The baseline approach was to construct a simple classifier by inheriting scikit-learn base classes **BaseEstimator** and **TransformerMixin**, to implement such functions like `get_params`, `get_params` and `fit_transform`. The result was overall acceptable, but this is just a
 
-To address the issue, we decided to convert words to simple feature vector then apply R**andomForestClassifier** model to recognize entities of the words and make prediction accordingly. We hence applied a more sophisticated feature extraction function based upon the,
+To address the issue, I decided to convert words to simple feature vector then apply R**andomForestClassifier** model to recognize entities of the words and make prediction accordingly. Hence, I applied a more sophisticated feature extraction function based upon the,
 
 Further model performance improvement was accomplished by employing **Conditional Random Field (CRF)** model via sklearn-crfsuite and ELI5. The idea was to implement sequence labelling technique to predict the sequences that use the contextual information to add information which will be used by the model to make a correct prediction.
 
@@ -61,11 +61,10 @@ Further model performance improvement was accomplished by employing **Conditiona
 |                 | | Random Forest | 0.25|
 |                 | | CRF | 0.664|
 |                 | | `CRF_tune` | `0.677`|
-
 | DL Approach      | RNN | Bi-LSTM with dropout |0.30|
 |       | RNN |Bi-LSTM + LSTM with dropout |0.31|
 
-In terms of Machine Learning approach, the fine-tuned CRF model achieve the highest result among other counterparts. This model surpassed our expectation as it foreshadowed Bi-LSTM model, which is well-known for its performance in the NER task. Despite its mediocre performance, Bi-LSTM is still one of the most sufficient techniques of the NER task if we can acquire bigger dataset or properly handle imbalance issue with suitable techniques.
+In terms of Machine Learning approach, the `fine-tuned CRF model` achieve the highest result among other counterparts. This model surpassed our expectation as it foreshadowed Bi-LSTM model, which is well-known for its performance in the NER task. Despite its mediocre performance, **Bi-LSTM** is still one of the most sufficient techniques of the NER task if we can acquire bigger dataset or properly handle imbalance issue with suitable techniques.
 
 ## Future work
 
